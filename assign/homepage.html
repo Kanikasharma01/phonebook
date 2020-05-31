@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hp</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.div2{
+  border: 1px outset black;
+  background-color: white;    
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+#div1{
+  border: 1px outset black;
+  background-color: white;    
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  //text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 20px;
+  display: none;
+  width: 45%;
+  margin: 0 auto;
+}
+#b1{background-color: #4CAF50; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+#b2{background-color: red; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+</style>
+</head>
+<body>
+
+<div class="myDiv">
+  <h2>RM-PHONEBOOK</h2> 
+</div>
+
+<div class="div2">
+	<form>
+	<input type="text" placeholder="Search.." size="90">
+	</form>
+	<br>
+	<div id="flip">
+		Faisal Alam
+	</div>
+	
+</div>
+<div id="panel">Name- Faisal Alam
+<br>
+Date of Birth- 03/11/1996
+<br>
+<div align="right">
+<button id="b1">Edit</button>
+<button id="b2">Remove</button>
+</div>
+<div id="div1">
+	<i class="fa fa-phone" style="font-size:36px"></i>
++91-7462984276 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i class="fa fa-envelope" style="font-size:36px"></i>&nbsp abc@gmail.com<br>
+<i class="fa fa-phone" style="font-size:36px"></i>
++91-8352873286 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <i class="fa fa-envelope" style="font-size:36px"></i>&nbsp xyz@gmail.com<br>
+</div>
+<div align="right">
+<a href="addnw.html"><i class="fa fa-plus-circle" style="font-size:36px"></i></a>
+</div>
+</div>
+</body>
+</html>

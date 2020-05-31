@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add New Contact</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<style>
+		table, td {
+ 		border: 1px solid black;
+ 		align-items: center;
+		}
+		table {
+  width: 30%;
+
+}
+
+th {
+  height: 40px;
+}
+
+	</style>
+</head>
+<body>
+<table align="center">
+	<tr align="left" background-color="blue"><th><a href="homepage.html "><i class='fas fa-angle-double-left' style='font-size:26px'></i></a>&nbsp&nbspADD NEW CONTACT<br><br></th></tr>
+	<tr></tr>
+	<tr>
+		<td>
+			<form>
+				<br>Name<br>
+				<input type="text" id="name" name="name" placeholder="Name"><br><br>
+				Date Of Birth<br>
+				<input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy">
+				<br><br>
+				Mobile Number<br>
+				 <input type="tel" id="phone" name="phone" placeholder="+91-XXXXXXXXXX" pattern="[0-9]{2}-[0-9]{10}" required>
+				 <br><br>
+				 Email<br>
+				 <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+				 <br><br>
+				 <input type="submit" value="Save">
+			</form>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
